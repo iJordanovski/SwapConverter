@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Swap</string>
+    <!--Conversion start value -->
+    <string name="start_value">0.00</string>
+    <string name="divider">|</string>
+    <string name="to">TO</string>
+    <string name="convert">CONVERT</string>
+    <string name="from">FROM</string>
+    <string name="markets">MARKETS</string>
+    <string name="required">This field is required</string>
+    <string name="try_again">Something went wrong try again</string>
+</resources>

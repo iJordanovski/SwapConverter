@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".feature.converter.ConvertFragment">
+
+    <LinearLayout
+        android:id="@+id/containerFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/currencyName"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/montserrat_light"
+            android:background="@android:color/transparent"
+            android:hint="@string/from" />
+        <TextView
+            android:id="@+id/currencyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/downArrowFrom"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_down_arrow" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/divider" />
+
+        <EditText
+            android:id="@+id/convertFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:background="@android:color/transparent"
+            android:hint="@string/start_value"
+            android:inputType="number|numberDecimal"
+            android:textCursorDrawable="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerFrom">
+
+
+        <TextView
+            android:id="@+id/fiatCurrencyName"
+            android:fontFamily="@font/montserrat_light"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/to" />
+        <TextView
+            android:id="@+id/fiatCurrencyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_down_arrow"/>
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/divider" />
+
+        <TextView
+            android:id="@+id/convertTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:background="@android:color/transparent"
+            android:hint="@string/start_value"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/convert"
+        android:textColor="@color/background_dark"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

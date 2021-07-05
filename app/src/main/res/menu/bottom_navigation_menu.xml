@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="HOME"
+        android:icon="@drawable/ic_market_home"/>
+    <item
+        android:id="@+id/convertFragment"
+        android:title="CONVERTER"
+        android:icon="@drawable/ic_converter"
+        />
+</menu>
